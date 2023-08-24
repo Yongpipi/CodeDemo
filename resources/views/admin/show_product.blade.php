@@ -80,7 +80,7 @@
                             <a class="btn btn-danger" onclick="return confirm('Are you sure')" href="{{url('/delete_product',$product->id)}}">Delete</a>
                         </td>
                         <td >
-                            <a class="btn btn-success" href="{{url('/update_product',$product->id)}}">Update</a>
+                            <a onclick="return confirm('Are you sure')" class="btn btn-success" href="{{url('/update_product',$product->id)}}">Update</a>
                         </td>
                     </tr>
                     @endforeach
